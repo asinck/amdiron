@@ -1,9 +1,13 @@
 #Adam Sinck
 #This is a text editor I wrote for fun, and to see if I could
 
-from Tkinter import *
-import Tkinter as tk
-import tkMessageBox
+try:
+    from Tkinter import *
+    import Tkinter as tk
+    import tkMessageBox
+except:
+    print "Package 'Tkinter' not found."
+    exit()
 
 #global variables
 currentTab = "Untitled 1" #this is the name of the initial tab
